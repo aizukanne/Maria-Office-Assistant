@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maria — External Overview</title>
+  <meta name="description" content="Business overview of Maria, an AI assistant for enterprise workflows. This document is self-contained, external-safe, and free of source code or internal identifiers." />
+  <style>
+    :root {
+      --text: #1f2937;
+      --muted: #4b5563;
+      --link: #0b69a3;
+      --bg: #ffffff;
+      --section: #f7fafc;
+      --border: #e5e7eb;
+    }
+    html, body { margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); }
+    main { max-width: 960px; margin: 0 auto; padding: 2rem 1rem; }
+    header { margin-bottom: 1rem; }
+    h1 { font-size: 2rem; margin: 0; }
+    .lead { font-size: 1.125rem; color: var(--muted); margin-top: 0.5rem; }
+    h2 { margin-top: 2rem; padding-top: 0.5rem; border-top: 1px solid var(--border); }
+    h3 { margin-top: 1.25rem; color: #0d3b66; }
+    p { margin: 0.75rem 0; }
+    ul { padding-left: 1.25rem; margin: 0.5rem 0 1rem; }
+    li { margin: 0.25rem 0; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .section { margin-top: 1.75rem; background: var(--section); padding: 1rem; border: 1px solid var(--border); border-radius: 8px; }
+    .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.75rem; margin: 0.75rem 0; }
+    .kpi { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 0.75rem; }
+    .small { color: var(--muted); font-size: 0.95rem; }
+    footer { margin-top: 2rem; border-top: 1px solid var(--border); padding-top: 1rem; color: var(--muted); }
+    @media print { a::after { content: " (" attr(href) ")"; font-size: 0.9em; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Maria: Enterprise AI Assistant</h1>
+    <p class="lead">An external, self-contained overview of capabilities, value, security posture, and sector-specific use cases. No source code, internal file names, or proprietary details are included.</p>
+  </header>
+
+  <section id="executive-summary" class="section">
+    <h2>Executive Summary</h2>
+    <p>Maria is an enterprise AI assistant that helps teams communicate, find information, and orchestrate routine processes across business systems. Designed for secure and responsible use, Maria fits naturally within existing collaboration workflows and supports outcome-driven assistance: faster responses, clearer decisions, and streamlined handoffs between people and systems. Organizations use Maria to reduce manual effort, improve service quality, and accelerate time to insight while maintaining control over data handling and privacy.</p>
+  </section>
+
+  <section id="key-capabilities" class="section">
+    <h2>Key Capabilities</h2>
+    <ul>
+      <li><strong>Omnichannel assistance:</strong> Meet users in their preferred channels, including chat, voice, and simple forms.</li>
+      <li><strong>Information retrieval and summarization:</strong> Access approved content and public web sources, then provide concise, contextual answers with references where appropriate.</li>
+      <li><strong>Process orchestration:</strong> Guide common workflows, collect inputs, trigger standardized steps, and draft follow-ups for human review.</li>
+      <li><strong>Enterprise integrations:</strong> Connect to widely used collaboration tools and major business platforms to streamline everyday tasks.</li>
+      <li><strong>Privacy-first design:</strong> Built around least-privilege access, configurable retention, and transparent handling of sensitive data.</li>
+      <li><strong>Configurable policies:</strong> Tailor behavior to organizational rules, including content boundaries, language tone, and escalation paths.</li>
+      <li><strong>Extensibility:</strong> Add new tasks, data sources, and workflows through modular configuration and well-defined integration points.</li>
+    </ul>
+
+    <div class="kpis" aria-label="Illustrative outcomes">
+      <div class="kpi">
+        <strong>Response time</strong>
+        <p class="small">Reduce average time-to-answer for routine requests by consolidating search and summarization.</p>
+      </div>
+      <div class="kpi">
+        <strong>Process completion</strong>
+        <p class="small">Improve on-time completion of standard workflows via guided steps and automated reminders.</p>
+      </div>
+      <div class="kpi">
+        <strong>Knowledge reuse</strong>
+        <p class="small">Increase reuse of institutional knowledge through centralized retrieval and concise summaries.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="solution-overview" class="section">
+    <h2>Solution Overview</h2>
+    <p>Maria brings together three core elements to deliver value:</p>
+    <ul>
+      <li><strong>Channels:</strong> Users interact through familiar collaboration interfaces. Maria supports conversational interactions (chat or voice) and structured inputs (forms) to gather the right details at the right time.</li>
+      <li><strong>Orchestration:</strong> Conversations are guided to clarify intent, apply policies, and route requests to the appropriate actions or information sources. Maria captures context and maintains continuity to reduce repetitive questions.</li>
+      <li><strong>Knowledge and integrations:</strong> Maria retrieves approved information and interfaces with enterprise systems to present results or draft next steps. Connections emphasize safety, auditability, and control.</li>
+    </ul>
+    <p class="small">Conceptually: users engage via collaboration interfaces; Maria orchestrates the request; knowledge and enterprise systems contribute information or actions; results are returned as clear, verifiable outputs for human decision-making.</p>
+  </section>
+
+  <section id="detailed-functionality" class="section">
+    <h2>Detailed Functionality</h2>
+    <p>This section describes how Maria operates in day-to-day use, focusing on what it does, typical inputs and outputs, example interactions, admin controls, and important considerations. It avoids implementation or internal details.</p>
+
+    <h3>Communication</h3>
+    <ul>
+      <li><strong>What it does:</strong> Participates in conversations, replies in threads, and provides summaries or follow-ups across supported channels.</li>
+      <li><strong>Typical inputs:</strong> Direct messages, mentions, replies in threads, short form inputs, or voice notes (where enabled).</li>
+      <li><strong>Typical outputs:</strong> Contextual replies, threaded summaries, action lists, and follow-up drafts ready for human send.</li>
+      <li><strong>Example interactions:</strong> “Summarize this discussion and propose next steps.” • “Draft a polite reply confirming we received the request and will respond by tomorrow.”</li>
+      <li><strong>Admin controls:</strong> Channel scope, mention behavior, response length, escalation triggers, and opt-out rules.</li>
+      <li><strong>Considerations:</strong> Seeks clarification when needed; avoids committing to actions without explicit confirmation.</li>
+    </ul>
+
+    <h3>Information Assistance</h3>
+    <ul>
+      <li><strong>What it does:</strong> Retrieves information from approved sources and, if enabled, public web content to answer questions and provide concise synopses.</li>
+      <li><strong>Typical inputs:</strong> Questions with optional context or links; requests to compare policies, procedures, or reference materials.</li>
+      <li><strong>Typical outputs:</strong> Concise answers, bullet-point summaries, and source references (where available).</li>
+      <li><strong>Example interactions:</strong> “Give a two-paragraph overview of our travel policy for new hires.” • “Compare these two documents and list the key differences.”</li>
+      <li><strong>Admin controls:</strong> Source allowlists/denylists, citation requirement, maximum depth/timeouts.</li>
+      <li><strong>Considerations:</strong> Highlights uncertainty; invites verification for sensitive or high-impact decisions.</li>
+    </ul>
+
+    <h3>Document Processing</h3>
+    <ul>
+      <li><strong>What it does:</strong> Reads common document formats, extracts key points, and can produce summaries or formatted outputs (such as PDF deliverables) according to policy.</li>
+      <li><strong>Typical inputs:</strong> Uploaded files or accessible links (policies, briefings, notes, images).</li>
+      <li><strong>Typical outputs:</strong> Executive summaries, highlights and action items, or ready-to-share formatted documents.</li>
+      <li><strong>Example interactions:</strong> “Summarize these meeting notes with owners and deadlines.” • “Create a one-page brief from this policy.”</li>
+      <li><strong>Admin controls:</strong> Allowed file types and sizes, retention limits, export formats, and sharing rules.</li>
+      <li><strong>Considerations:</strong> Honors data boundaries; may request additional context if content is incomplete.</li>
+    </ul>
+
+    <h3>Message Management</h3>
+    <ul>
+      <li><strong>What it does:</strong> Helps organize conversations by summarizing long threads, highlighting decisions, and prompting for unresolved items.</li>
+      <li><strong>Typical inputs:</strong> Thread links or prompts to “recap” or “extract decisions.”</li>
+      <li><strong>Typical outputs:</strong> Thread recaps, decision logs, open items with suggested owners.</li>
+      <li><strong>Admin controls:</strong> Rules for mention frequency, recap cadence, and content boundaries.</li>
+      <li><strong>Considerations:</strong> Sensitive content can be omitted or generalized according to policy.</li>
+    </ul>
+
+    <h3>User and Admin Controls</h3>
+    <ul>
+      <li><strong>What it does:</strong> Supports role-based access and policy-driven behavior (tone, escalation, content boundaries).</li>
+      <li><strong>Typical inputs:</strong> Admin settings for roles, channels, retention, and safety rules.</li>
+      <li><strong>Typical outputs:</strong> Consistent responses aligned with organizational policies and audiences.</li>
+      <li><strong>Considerations:</strong> Changes to controls may require review to maintain consistency and compliance.</li>
+    </ul>
+
+    <h3>Integrations</h3>
+    <ul>
+      <li><strong>What it does:</strong> Connects to widely used collaboration and business platforms to fetch information or prepare drafts for routine actions.</li>
+      <li><strong>Typical inputs:</strong> Requests such as “show status,” “prepare a draft update,” or “summarize recent activity.”</li>
+      <li><strong>Typical outputs:</strong> Status summaries, prepared drafts for human send, or next-step checklists.</li>
+      <li><strong>Considerations:</strong> Specific connectors and permissions are confirmed during discovery; actions require explicit user confirmation.</li>
+    </ul>
+
+    <h3>Workflow Orchestration</h3>
+    <ul>
+      <li><strong>What it does:</strong> Guides multi-step processes using checklists, requests confirmations, and tracks progress for visibility.</li>
+      <li><strong>Typical inputs:</strong> Task lists, forms, or prompts like “help me complete the onboarding checklist.”</li>
+      <li><strong>Typical outputs:</strong> Structured steps, reminders, and handoff-ready drafts.</li>
+      <li><strong>Considerations:</strong> Designed for human-in-the-loop review; responsibilities and approvals remain with your team.</li>
+    </ul>
+
+    <h3>Capability at a Glance</h3>
+    <table aria-label="Capability at a Glance">
+      <thead>
+        <tr><th>Area</th><th>Typical Inputs</th><th>Typical Outputs</th><th>Example Result</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Communication</td><td>Messages, mentions, forms</td><td>Replies, summaries, drafts</td><td>“Draft a confirmation we received the request.”</td></tr>
+        <tr><td>Information Assistance</td><td>Questions, links, context</td><td>Answers with references</td><td>“Two-paragraph overview with citations.”</td></tr>
+        <tr><td>Document Processing</td><td>Files or links</td><td>Summaries, formatted outputs</td><td>“One-page brief with action items.”</td></tr>
+        <tr><td>Integrations</td><td>Status requests</td><td>Rollups, drafts</td><td>“Weekly status digest for the team.”</td></tr>
+        <tr><td>Workflows</td><td>Checklist prompts</td><td>Steps, reminders</td><td>“Onboarding steps with owners.”</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="industry-use-cases" class="section">
+    <h2>Industry Use Cases</h2>
+
+    <h3>Manufacturing</h3>
+    <ul>
+      <li>Summarize production status and exceptions for shift handovers, highlighting actions and owners.</li>
+      <li>Draft supplier communications for parts availability or order confirmations, ready for review and send.</li>
+      <li>Deliver quick-reference guidance on safety policies and procedures to floor supervisors and leads.</li>
+      <li>Aggregate quality observations from approved sources and produce a daily snapshot for managers.</li>
+    </ul>
+
+    <h3>Retail & eCommerce</h3>
+    <ul>
+      <li>Assist support teams with product information, warranty details, and clear answers sourced from approved content.</li>
+      <li>Generate inventory and order status summaries for store or fulfillment operations, emphasizing exceptions.</li>
+      <li>Draft campaign copy variations and category descriptions for merchandising teams to refine and approve.</li>
+      <li>Provide concise rollups of customer feedback themes to inform continuous improvements.</li>
+    </ul>
+
+    <h3>Financial Services</h3>
+    <ul>
+      <li>Offer policy and procedure Q&A for internal teams with citations to approved content sources.</li>
+      <li>Orchestrate checklist-driven tasks for periodic reviews and reminders across teams.</li>
+      <li>Summarize market or regulatory updates from allowed public sources for internal briefings.</li>
+      <li>Create consistent, auditable responses to common internal queries with configurable guardrails.</li>
+    </ul>
+
+    <h3>Healthcare</h3>
+    <ul>
+      <li>Support non-clinical operations such as scheduling coordination and intake communications.</li>
+      <li>Provide policy and compliance guidance lookup for staff, tailored to role-based access.</li>
+      <li>Summarize supply and logistics status for administrators, highlighting bottlenecks and next steps.</li>
+      <li>Draft internal announcements and FAQs for change management and staff enablement.</li>
+    </ul>
+
+    <h3>Logistics & Supply Chain</h3>
+    <ul>
+      <li>Produce shipment and delivery status rollups for daily standups across regions or lanes.</li>
+      <li>Assist triage of exceptions by gathering context and suggesting next-best-actions for human approval.</li>
+      <li>Generate KPI snapshots for fulfillment and on-time performance with clear notes and owners.</li>
+      <li>Prepare partner-ready updates consolidating data from approved internal sources.</li>
+    </ul>
+
+    <h3>Public Sector</h3>
+    <ul>
+      <li>Draft program updates, internal FAQs, and staff briefings based on approved policies.</li>
+      <li>Enable knowledge lookup across public guidance and internal documents with clear citations.</li>
+      <li>Coordinate standard operating procedures by prompting for inputs and logging confirmations.</li>
+      <li>Create accessible summaries to support service delivery and community engagement.</li>
+    </ul>
+
+    <h3>Professional Services</h3>
+    <ul>
+      <li>Summarize engagement briefs and scope notes from approved materials to expedite kickoff.</li>
+      <li>Compile research syntheses from public sources with references for internal review.</li>
+      <li>Draft internal status updates and follow-ups based on meeting inputs and action items.</li>
+      <li>Standardize deliverable outlines to accelerate quality and consistency across teams.</li>
+    </ul>
+  </section>
+
+  <section id="data-privacy" class="section">
+    <h2>Data Protection and Privacy</h2>
+    <ul>
+      <li><strong>Least privilege:</strong> Access is scoped to the minimum necessary for the requested task.</li>
+      <li><strong>Configurable retention:</strong> Retention windows are configurable; customers can request data minimization and deletion policies.</li>
+      <li><strong>Encryption in transit and at rest:</strong> Data is protected during transmission and storage using industry-standard approaches.</li>
+      <li><strong>Role-based control:</strong> Access to features and information is governed by role and need-to-know principles.</li>
+      <li><strong>Transparency:</strong> Maria communicates limitations, cites sources where appropriate, and requests confirmation for sensitive actions.</li>
+      <li><strong>Human-in-the-loop:</strong> Drafts and recommendations are intended for human review and approval before completion.</li>
+      <li><strong>Auditability:</strong> Interactions and key decision points can be logged for compliance and oversight, subject to customer policy.</li>
+      <li><strong>Responsible use:</strong> Safety features help prevent inappropriate content and encourage respectful, compliant interactions.</li>
+    </ul>
+    <p class="small">Customers may define additional policies and data boundaries to align with organizational standards and regulatory expectations.</p>
+  </section>
+
+  <section id="getting-started" class="section">
+    <h2>Getting Started</h2>
+    <ul>
+      <li><strong>Discovery:</strong> Align on initial goals, scope, and success metrics; define data sources and channels.</li>
+      <li><strong>Configuration:</strong> Establish access, content boundaries, tone, and escalation preferences.</li>
+      <li><strong>Integration validation:</strong> Verify connections to collaboration tools and business systems using representative test cases.</li>
+      <li><strong>Pilot:</strong> Run a focused pilot with a small group; collect feedback and refine prompts, workflows, and guardrails.</li>
+      <li><strong>Rollout:</strong> Expand to additional teams with enablement materials, templates, and a feedback loop.</li>
+    </ul>
+  </section>
+
+  <section id="operations-support" class="section">
+    <h2>Operations and Support</h2>
+    <ul>
+      <li><strong>Reliability approach:</strong> Emphasis on resilience, graceful degradation, and clear fallbacks to human assistance.</li>
+      <li><strong>Monitoring:</strong> Track health signals and usage patterns to proactively address issues and improve performance.</li>
+      <li><strong>Issue handling:</strong> Clear pathways for reporting issues, with transparent status updates and root-cause focus.</li>
+      <li><strong>Change management:</strong> Structured updates and communication to minimize disruption to teams.</li>
+      <li><strong>Enablement:</strong> Admin and user guidance to adopt best practices and realize value quickly.</li>
+    </ul>
+  </section>
+
+  <section id="faqs" class="section">
+    <h2>FAQs</h2>
+    <ul>
+      <li><strong>What data does Maria store?</strong> Data handling follows a minimization approach with configurable retention and role-based access. Customers can request additional controls to align with policy.</li>
+      <li><strong>Does Maria learn from our data?</strong> Maria is designed to respect customer boundaries. Behavior can be configured so that content is not used beyond the agreed scope for serving your organization.</li>
+      <li><strong>How are sensitive requests handled?</strong> Sensitive or consequential actions can be gated behind confirmations, approvals, and auditable steps.</li>
+      <li><strong>What integrations are supported?</strong> Maria connects with widely used collaboration tools and major enterprise platforms. Specific connectors can be discussed during discovery.</li>
+      <li><strong>Can Maria operate in restricted environments?</strong> Options are available to support stricter data boundaries; feasibility is confirmed during discovery and integration validation.</li>
+      <li><strong>How is content quality ensured?</strong> Maria provides citations where appropriate, requests clarifications, and encourages human review for accuracy and fit.</li>
+      <li><strong>How customizable is Maria?</strong> Behavior, tone, policies, and workflows are configurable to align with organizational needs and compliance standards.</li>
+    </ul>
+  </section>
+
+  <footer class="section">
+    <h2>Next Steps</h2>
+    <p>To explore Maria for your organization, contact our team to schedule a discovery session or pilot. We will align on goals, outline an initial scope, and determine the best path to value based on your use cases and policies.</p>
+    <p class="small">This page is intended for external audiences and does not include source code, internal identifiers, or proprietary details.</p>
+  </footer>
+</main>
+</body>
+</html>
